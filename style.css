@@ -1,0 +1,268 @@
+*{
+margin: 0;
+box-sizing: border-box;
+}
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+background-color: #5389d0;
+height: 100px;
+position: relative;
+width: 100%;
+top:0;
+left: 0;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+max-width: 992px;
+margin: 0 auto;
+}
+.logo {
+    height: 100px;
+}
+.nav-link{
+font-size: 25px;
+color: #000000;
+text-decoration: none;
+}
+.nav-menu{
+display: flex;
+margin-right: 40px;
+list-style: none;
+}
+.nav-menu-item{
+font-size: 25px;
+margin: 0 10px;
+line-height: 80px;
+text-transform: uppercase;
+width: max-content;
+}
+.seccion-con-imagen{
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom: 10px solid black; /* Agrega una línea negra en la parte inferior de cada div */
+}
+#fondo{
+width: 100%;
+height: 100vh;
+background-image: url(./imagenes/htmlycss.png);
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: center;
+color: #ffffff; /* Cambia el color del texto a blanco */
+}
+.parent {
+    background-color: #a6ccff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-bottom: 20px solid black; /* Agrega una línea negra en la parte inferior de cada div */
+}
+.parent img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    padding: 35px;
+}
+.texto {
+    color: #ffffff; /* Cambia el color del texto a gris oscuro */
+    font-size: 30px; /* Cambia el tamaño del texto a 16px */
+    line-height: 1.5; /* Cambia el espacio entre las líneas a 1.5 veces el tamaño del texto */
+    padding: 35px; /* Agrega un relleno de 20px alrededor del texto */
+    background-color: #a6ccff;
+    border-bottom: 20px solid black;
+}
+.texto p {
+    margin-bottom: 30px; /* Agrega un espacio de 20px debajo de cada párrafo */
+}
+.seccion-con-imagen-2 {
+    background-color: #a6ccff;
+    display: grid; /* Esto hará que el div use CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Esto dividirá el div en dos columnas de igual tamaño */
+    background-image: url(./imagenes/html.png); /* Cambia esto por la ruta a tu imagen de fondo */
+    background-size: cover; /* Esto hará que la imagen de fondo cubra todo el div */
+    border-bottom: 20px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.texto-derecha {
+    font-size: 25px;
+    grid-column: 2; /* Esto hará que el texto ocupe la segunda columna */
+    color: #fff; /* Cambia el color del texto a blanco */
+    padding: 20px; /* Agrega un relleno de 20px alrededor del texto */
+    text-align: center; /* Alinea el texto a la derecha */
+    display: flex; /* Esto hará que el div use Flexbox */
+    align-items: center; /* Esto centrará verticalmente el texto */
+    justify-content: center; /* Esto centrará horizontalmente el texto */
+    flex-direction: column; /* Esto hará que los elementos se alineen en una columna */
+    overflow: hidden; /* Esto evitará que el texto salga del grid */
+}
+.seccion-con-imagen-3 {
+    background-color: #a6ccff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(./imagenes/css.png);
+    background-size: cover;
+    border-bottom: 20px solid black;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Cambia 'height' a 'min-height' */
+}
+.texto-izquierda {
+    background-color: #a6ccff;
+    font-size: 25px;
+    grid-column: 1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sobre-mi {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Esto divide el espacio en 2/3 para el texto y 1/3 para la imagen */
+    background-color: #a6ccff;
+    border-bottom: 20px solid black;
+}
+.sobre-mi .texto-sobre-mi {
+    padding: 35px;
+    grid-column: 1;
+    color: #fff;
+    font-size: 30px;
+    display: flex; /* Esto hará que el div use Flexbox */
+    align-items: center; /* Esto centrará verticalmente el texto */
+    justify-content: center; /* Esto centrará horizontalmente el texto */
+    flex-direction: column; /* Esto hará que los elementos se alineen en una columna */
+    overflow: hidden; /* Esto evitará que el texto salga del grid */
+}
+.sobre-mi .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-mi img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 35px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    border-bottom: 10px solid black;
+    background-color: #5389d0;
+}
+.tema{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 0px;
+}
+.tecnologia {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 10px;
+    justify-content: end;
+}
+.icono-html img, .icono-css img, .icono-github img, .icono-vsc img, .icono-youtube img {
+    width: 15%; /* Ajusta este valor para cambiar el tamaño de las imágenes */
+    height: auto;
+}
+.footer a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+    color: #fff;
+}
+.tema a:nth-child(1) {
+    grid-row: 1;
+    font-size: 40px;
+    color: #ffffff; /* Cambia el color del texto */
+    text-decoration-line: underline overline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-style: double;
+    font-weight: bold;
+}
+.tema a:nth-child(2){
+    grid-row: 2;
+    font-size: 25px;
+}
+.tema a:nth-child(3){
+    grid-row: 3;
+    font-size: 25px;
+}
+.tema a:nth-child(4){
+    grid-row: 4;
+    font-size: 25px;
+}
+.tema a:nth-child(5){
+    grid-row: 5;
+    font-size: 25px;
+}
+.tema a:nth-child(6){
+    grid-row: 6;
+    font-size: 25px;
+}
+.tecnologia a:nth-child(1){
+    grid-row: 1;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline overline;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-style: double;
+    font-weight: bold;
+}
+.tecnologia a:nth-child(2){
+    grid-row: 2;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologia a:nth-child(3){
+    grid-row: 3;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologia a:nth-child(4){
+    grid-row: 4;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologia a:nth-child(5){
+    grid-row: 5;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tecnologia a:nth-child(6){
+    grid-row: 6;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
